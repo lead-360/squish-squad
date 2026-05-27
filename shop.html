@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop ★ Squish Squad</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛍️</text></svg>">
+</head>
+<body>
+
+  <div class="sparkle">✨</div>
+  <div class="sparkle">⭐</div>
+  <div class="sparkle">💖</div>
+  <div class="sparkle">💎</div>
+  <div class="sparkle">🌟</div>
+  <div class="butterfly">🦋</div>
+  <div class="butterfly">🦋</div>
+  <div class="butterfly">🦋</div>
+
+  <nav class="navbar">
+    <div class="logo"><span class="star">★</span> SQUISH SQUAD</div>
+    <ul class="nav-links">
+      <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+      <li><a href="shop.html" data-i18n="nav_shop">Shop</a></li>
+      <li><a href="mystery.html" data-i18n="nav_mystery">Mystery</a></li>
+      <li><a href="admin.html" data-i18n="nav_admin">Admin</a></li>
+      <li><button class="nav-links lang-toggle" type="button"><span class="globe">🌐</span><span class="lang-label">عربي</span></button></li>
+      <li><a href="#" class="cart-button">🛒 <span class="cart-count" id="cartCount">0</span></a></li>
+    </ul>
+  </nav>
+
+  <h1 class="section-title" style="margin-top: 50px;">🛍️ <span class="holo" data-i18n="shop_title">The Shop</span> 🛍️</h1>
+  <p class="section-subtitle" data-i18n="shop_subtitle">Every squish. All the drops. Hand-picked vibes only.</p>
+
+  <div class="filters" id="filters">
+    <button class="filter-pill active" data-filter="all" data-i18n="filter_all">All ★</button>
+    <button class="filter-pill" data-filter="needoh" data-i18n="filter_needoh">Nee Doh 🌈</button>
+    <button class="filter-pill" data-filter="mystery" data-i18n="filter_mystery">Mystery 🎁</button>
+    <button class="filter-pill" data-filter="viral" data-i18n="filter_viral">Viral 🔥</button>
+    <button class="filter-pill" data-filter="cute" data-i18n="filter_cute">Cute 💖</button>
+  </div>
+
+  <div class="product-grid" id="productGrid"></div>
+
+  <footer class="footer">
+    <div class="rainbow-bar"></div>
+    <p data-i18n="footer_made_by">Made with 💖 by Rawda ★ Squish Squad © 2026</p>
+    <p style="margin-top: 8px; opacity: 0.7; font-size: 12px;">
+      <span data-i18n="shop_footer_hint_pre">Want to add products? Head to the</span>
+      <a href="admin.html" style="color: var(--cyber-lime);" data-i18n="shop_footer_hint_link">Admin panel</a> ★
+    </p>
+  </footer>
+
+  <div class="toast" id="toast">Added! 💖</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

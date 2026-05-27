@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mystery Box ★ Squish Squad</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎁</text></svg>">
+</head>
+<body>
+
+  <div class="sparkle">✨</div>
+  <div class="sparkle">⭐</div>
+  <div class="sparkle">💖</div>
+  <div class="sparkle">💎</div>
+  <div class="sparkle">🌟</div>
+  <div class="butterfly">🦋</div>
+  <div class="butterfly">🦋</div>
+  <div class="butterfly">🦋</div>
+
+  <nav class="navbar">
+    <div class="logo"><span class="star">★</span> SQUISH SQUAD</div>
+    <ul class="nav-links">
+      <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+      <li><a href="shop.html" data-i18n="nav_shop">Shop</a></li>
+      <li><a href="mystery.html" data-i18n="nav_mystery">Mystery</a></li>
+      <li><a href="admin.html" data-i18n="nav_admin">Admin</a></li>
+      <li><button class="nav-links lang-toggle" type="button"><span class="globe">🌐</span><span class="lang-label">عربي</span></button></li>
+      <li><a href="#" class="cart-button">🛒 <span class="cart-count" id="cartCount">0</span></a></li>
+    </ul>
+  </nav>
+
+  <section class="mystery-hero">
+    <h1 class="section-title" style="margin-top: 20px;">🎁 <span class="holo" data-i18n="mystery_title">Mystery Box</span> 🎁</h1>
+    <p class="section-subtitle" data-i18n="mystery_subtitle">Tap the box. Reveal a random squish drop.</p>
+  </section>
+
+  <div class="mystery-box-wrap">
+    <div class="mystery-box" id="mysteryBox">🎁</div>
+  </div>
+  <p class="mystery-hint" data-i18n="mystery_tap_hint">👆 Tap to reveal 👆</p>
+  <div id="mysteryReveal"></div>
+
+  <h2 class="section-title">✨ <span class="holo" data-i18n="mystery_inside_title">What's Inside?</span> ✨</h2>
+  <p class="section-subtitle" data-i18n="mystery_inside_sub">Hand-packed surprise drops, every single time</p>
+
+  <div class="features-row">
+    <div class="feature-box">
+      <span class="icon">🍡</span>
+      <h3 data-i18n="feature_mochi_title">Mochi Drops</h3>
+      <p data-i18n="feature_mochi_text">Slow-rising mochi cuties</p>
+    </div>
+    <div class="feature-box">
+      <span class="icon">🌈</span>
+      <h3 data-i18n="feature_needoh_title">Nee Doh Balls</h3>
+      <p data-i18n="feature_needoh_text">The stretchy classic</p>
+    </div>
+    <div class="feature-box">
+      <span class="icon">🦄</span>
+      <h3 data-i18n="feature_viral_pick_title">Viral Heat</h3>
+      <p data-i18n="feature_viral_pick_text">Trending squishies inside</p>
+    </div>
+    <div class="feature-box">
+      <span class="icon">💌</span>
+      <h3 data-i18n="feature_sticker_title">Bonus Sticker</h3>
+      <p data-i18n="feature_sticker_text">Holo sticker every box</p>
+    </div>
+  </div>
+
+  <h2 class="section-title">🎀 <span class="holo" data-i18n="mystery_pick_title">Pick Your Box</span> 🎀</h2>
+
+  <div class="mystery-pricing">
+
+    <div class="tier-card">
+      <div class="tier-name" data-i18n="tier_mini_name">Mini 🌸</div>
+      <div class="tier-price">AED 55</div>
+      <ul class="tier-includes">
+        <li data-i18n="tier_mini_1">3 surprise squishies</li>
+        <li data-i18n="tier_mini_2">1 holo sticker</li>
+        <li data-i18n="tier_mini_3">Mystery scratch card</li>
+      </ul>
+      <button class="add-to-cart" data-product="Mini Mystery Box" data-i18n="btn_drop_in_cart">Drop in Cart 💖</button>
+    </div>
+
+    <div class="tier-card featured">
+      <div class="product-badge hot" style="position: absolute; top: -16px; right: 16px;" data-i18n="tier_most_loved">MOST LOVED</div>
+      <div class="tier-name" data-i18n="tier_squad_name">Squad 🌈</div>
+      <div class="tier-price">AED 100</div>
+      <ul class="tier-includes">
+        <li data-i18n="tier_squad_1">5 surprise squishies</li>
+        <li data-i18n="tier_squad_2">1 GUARANTEED viral</li>
+        <li data-i18n="tier_squad_3">3 stickers + mini charm</li>
+        <li data-i18n="tier_squad_4">Rainbow mystery card</li>
+      </ul>
+      <button class="add-to-cart" data-product="Squad Mystery Box" data-i18n="btn_drop_in_cart">Drop in Cart 💖</button>
+    </div>
+
+    <div class="tier-card">
+      <div class="tier-name" data-i18n="tier_ultra_name">Ultra 👑</div>
+      <div class="tier-price">AED 185</div>
+      <ul class="tier-includes">
+        <li data-i18n="tier_ultra_1">8 surprise squishies</li>
+        <li data-i18n="tier_ultra_2">2 GUARANTEED virals</li>
+        <li data-i18n="tier_ultra_3">Limited edition squish</li>
+        <li data-i18n="tier_ultra_4">Sticker pack + plush bag</li>
+      </ul>
+      <button class="add-to-cart" data-product="Ultra Mystery Box" data-i18n="btn_drop_in_cart">Drop in Cart 💖</button>
+    </div>
+
+  </div>
+
+  <section class="hero" style="padding: 30px 20px;">
+    <h2 class="section-title" style="margin-top: 0;">🤫 <span class="holo" data-i18n="mystery_secret_title">Lil Secret</span></h2>
+    <p style="font-size: 18px; max-width: 600px; margin: 0 auto; color: var(--cyber-lime); font-family: 'Bungee', sans-serif; text-transform: uppercase; letter-spacing: 1px;" data-i18n="mystery_secret_text">
+      Every box is hand-packed by Rawda with a lil handwritten note 💌
+    </p>
+  </section>
+
+  <footer class="footer">
+    <div class="rainbow-bar"></div>
+    <p data-i18n="footer_made_by">Made with 💖 by Rawda ★ Squish Squad © 2026</p>
+    <p style="margin-top: 8px; opacity: 0.7; font-size: 12px;" data-i18n="footer_handle">@squishsquad on the internet 🌐</p>
+  </footer>
+
+  <div class="toast" id="toast">Added! 💖</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
